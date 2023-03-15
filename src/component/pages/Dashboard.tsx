@@ -3,6 +3,7 @@ import Sidebar from "../Sidebar";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom"; 
 import UserDetails from "./UserDetails";
+import React from "react";
 export default function UserDetailsPage(){
     const navigate = useNavigate()
 
