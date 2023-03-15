@@ -12,9 +12,13 @@ useEffect(() => {
        navigate("/login")
     }
 }, [])
-    return(<div>
-        <Navigation/>
-        <Sidebar/>
-        <UserDetails/>
-    </div>)
+    return(
+        <>
+            <div>
+                <Navigation/>
+                <Sidebar/>
+                <UserDetails/>
+            </div>
+        </>
+    )
 }
