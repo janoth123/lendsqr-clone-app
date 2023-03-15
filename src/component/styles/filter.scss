@@ -1,0 +1,89 @@
+@import "_variables";
+
+
+
+.filter-container {
+    padding: 10px;
+    box-shadow: 0px 0px 5px 1px grey;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    left: 15px;
+    border-radius: 4px;
+    width: 260px;
+    background-color: $light;
+    z-index: 1;
+    font-size: 14px;
+
+    .parameter-section {
+
+        font-family: "Work Sans";
+        font-style: normal;
+        color: #545F7D;
+        margin: 25px 0px;
+
+        input,
+        select {
+            @include input-style;
+            width: 100%;
+            padding: 9px;
+            color: #545F7D;
+        }
+
+        .date-label {
+            width: 700px !important;
+            height: 20px;
+            background-color: red;
+        }
+
+
+    }
+
+    .buttons {
+        @include flex-align-center;
+        @include justify-around;
+        width: 100%;
+        margin: 15px 0px;
+
+        button:first-child {
+            @include button(2px solid #545F7D, $light, #213F7D, )
+        }
+
+        button:last-child {
+            @include button(none, $primary, $light, )
+        }
+    }
+}
+
+
+@media(max-width:"1110px") {
+    .filter-container {
+        top: 5.7%;
+    }
+}
+
+@media(max-width:"671px") {
+    .filter-container {
+        top: 10.7%;
+    }
+}
+
+@media(max-width:"428px") {
+    .filter-container {
+        top: 16.3%;
+        width: 200px;
+
+        .buttons {
+            gap: 10px;
+
+            button {
+                width: 50%;
+                text-align: center;
+
+            }
+            button:first-child {
+                padding: 10px 20px;
+            }
+        }
+    }
+}
