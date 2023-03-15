@@ -1,3 +1,4 @@
+import React from "react";
 import "../styles/filter.css"; 
 
 export default function Filter () {

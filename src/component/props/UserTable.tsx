@@ -12,6 +12,10 @@ import view from "../icons/view.png"
 import blacklist from "../icons/blacklist.png"
 import { Link } from "react-router-dom"
 import axios from "axios"
+import React from "react";
+
+
+// TYPESCRIPT
 export type User = {
     "createdAt": string,
     "orgName": string,
@@ -40,6 +44,8 @@ export type User = {
         "108.69"
     ]
 }
+
+// FETCHING USERS
 export const url = "https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users"
 export default function UserTable() {
     const [initial] = useState<{ filter: boolean, options: boolean }>({ filter: false, options: false })
