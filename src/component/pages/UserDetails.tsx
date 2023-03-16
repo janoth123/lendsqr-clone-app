@@ -6,6 +6,7 @@ import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react"
 import { url, User } from "../props/UserTable";
 import axios from "axios"
+import React from "react";
 
 export default function UserDetails() {
 

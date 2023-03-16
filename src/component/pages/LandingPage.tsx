@@ -1,3 +1,4 @@
+import React from "react";
 import Navigation from "../Navigation";
 import Sidebar from "../Sidebar"; 
 import Cards from "../props/Cards";
