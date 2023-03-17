@@ -21,7 +21,6 @@ import reports from "./icons/reports.png"
 import preferences from "./icons/preferences.png"
 import audit from "./icons/audit.png"
 import { useState } from "react";
-import React from "react";
 export default function Sidebar() {
 
     const [toggleSidebar, setToggleSidebar] = useState<boolean>(false)

@@ -12,7 +12,6 @@ import view from "../icons/view.png"
 import blacklist from "../icons/blacklist.png"
 import { Link } from "react-router-dom"
 import axios from "axios"
-import React from "react";
 
 
 // TYPESCRIPT

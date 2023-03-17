@@ -5,7 +5,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { AiOutlineSearch, AiFillCaretDown, AiOutlineMenu, AiOutlineClose, AiOutlineLogout } from "react-icons/ai"
 import { useState, useEffect } from "react";
 import { User } from "./props/UserTable";
-import React from "react";
 
 export default function Navigation() {
     const [clickedMenu, setClickedMenu] = useState<boolean>(false)

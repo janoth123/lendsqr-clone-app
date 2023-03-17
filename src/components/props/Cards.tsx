@@ -6,7 +6,6 @@ import saving_users from "../icons/saving_users.png";
 import UserTable from "./UserTable";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import React from "react";
 
 export default function Cards() {
   const [users, setUsers] = useState<object[]>([]);

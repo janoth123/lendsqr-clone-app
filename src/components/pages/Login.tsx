@@ -5,7 +5,6 @@ import { useState, useEffect } from "react"
 import { url, User } from "../props/UserTable"
 import axios from "axios"
 import { useNavigate } from "react-router-dom"
-import React from "react"
 export default function Login() {
     const [users, setUsers] = useState<User[]>([]) 
     const [input, setInput] = useState<{ email: string, password: string, error: string }>({ email: "", password: "", error: "" })
