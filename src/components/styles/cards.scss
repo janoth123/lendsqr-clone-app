@@ -3,9 +3,12 @@
 .cards-container {
     position: absolute;
     top: 60px;
+    // left: 25%;
+    // left: 20%;
     right: 0;
-    width: 74%;
+    width: 75%;
     margin: auto;  
+
 
     .header {
         font-family: 'Work Sans';
@@ -13,8 +16,8 @@
         font-weight: 500;
         font-size: 24px;
         line-height: 28px;
+        margin: 30px 0px;
         color: $text-primary;
-        padding: 10px 0 0 5px;
     }
 }
 
@@ -22,17 +25,20 @@
     @include flex;
     @include justify-start;
     flex-wrap: wrap;
-    gap: 20px;
+
+    gap: 10px;
+
 
     .card {
-        width: 19%;
         background-color: $light;
-        box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.1);
+        // box-shadow: 0px 0px 4px 0px grey;
+        box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
         border-radius: 4px;
         @include flex;
         flex-direction: column;
-        gap: 1px;
-        height: 130px;
+        gap: 15px;
+        width: 23%;
+        height: 150px;
         padding: 20px;
 
         font-family: 'Work Sans';
@@ -40,7 +46,9 @@
         font-weight: 500;
         font-size: map-get($map: $font-sizes, $key: "normal");
         line-height: map-get($map: $font-sizes, $key: "mid");
+        ;
         text-transform: uppercase;
+
         color: #545F7D;
 
         .number {
@@ -55,6 +63,8 @@
 @media(max-width:"565px"){
     .cards-container {
         position: absolute;
+        // top: 130px;
+        // left: 25%;
         left: 0;
         right: 0;
         width: 80%;
@@ -63,6 +73,7 @@
         flex-direction: column;
         .card{
             width: 100%;
+           
             align-items: center;
         }
     }
@@ -74,11 +85,10 @@
 @media(max-width:"1111px"){
     .cards-body{
         padding: 0px;
+        // justify-content: center;
         .card{
             height: 180px;
-            flex-wrap: wrap;
-            gap: 5px;
-            margin-left: 20px;
+            // width: 40%;
         }
     }
 }
@@ -88,6 +98,7 @@
         padding: 0px;
         justify-content: flex-start; 
         .card{
+            // height: 180px;
             width: 45%;
         }
     }

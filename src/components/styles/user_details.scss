@@ -1,8 +1,7 @@
 @import "cards.scss";
 @import "_variables";
 .table-container{
-    overflow-x: scroll;
-    margin-left: 10px
+    overflow-x: scroll
 }
 .userdetails-container {
     @extend .cards-container;
