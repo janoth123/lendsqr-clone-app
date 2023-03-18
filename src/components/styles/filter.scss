@@ -22,7 +22,11 @@
         color: #545F7D;
         margin: 25px 0px;
 
-        input,
+        input{
+            width: 90%;
+            padding: 9px;
+            color: #545F7D;
+        }
         select {
             @include input-style;
             width: 100%;
