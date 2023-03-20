@@ -13,6 +13,7 @@ export default function Login() {
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = event.target
+        
         setInput((prev) => {
             return { ...prev, [name]: value.toLowerCase() }
         })

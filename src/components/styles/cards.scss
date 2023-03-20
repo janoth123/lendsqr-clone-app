@@ -21,19 +21,22 @@
     @include flex;
     @include justify-start;
     flex-wrap: wrap;
-    gap: 10px;
-    border: 3px solid red;
+    margin: auto;
+    // gap: 40px;
+    // border: 3px solid red;
+    // border: 1px solid black;
+    margin-left: 10px;
     
     .card {
-        width: 22%;
+        width: 19%;
         background-color: $light;
         box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.1);
         border-radius: 4px;
         @include flex;
         flex-direction: column;
         gap: 1px;
-        height: 130px;
-        // padding: 20px;
+        height: 80px;
+        padding: 20px 0 40px 20px;
 
         font-family: 'Work Sans';
         font-style: normal;
@@ -61,7 +64,7 @@
     .cards-body{
         flex-direction: column;
         .card{
-            width: 100%;
+            width: 20%;
             align-items: center;
             box-sizing: border-box;
             margin-left: 0;
@@ -76,9 +79,9 @@
     .cards-body{
         padding: 0px;
         .card{
-            height: 190px;
+            height: 130px;
             flex-wrap: wrap;
-            gap: 5px;
+            gap: 15px;
         }
     }
 }
