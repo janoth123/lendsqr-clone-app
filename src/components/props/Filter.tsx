@@ -7,7 +7,8 @@ export default function Filter () {
                 <div className="parameter">
                     Organization
                 </div>
-                <div className="select">
+                <div 
+            className="select">
                     <select name="" id="">
                         <option value="">Select</option>
                         <option value="">Lendsqr</option>

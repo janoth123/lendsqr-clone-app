@@ -62,9 +62,6 @@
 .login_container .body .form-section .form-width form .error::-moz-placeholder {
   color: red;
 }
-.login_container .body .form-section .form-width form .error:-ms-input-placeholder {
-  color: red;
-}
 .login_container .body .form-section .form-width form .error::placeholder {
   color: red;
 }
@@ -97,21 +94,21 @@
     flex-direction: column;
   }
   .login_container .body .banner-section,
-.login_container .body .form-section {
+  .login_container .body .form-section {
     width: 95%;
     margin: auto;
     height: 100%;
   }
   .login_container .body .banner-section .input-container,
-.login_container .body .form-section .input-container {
+  .login_container .body .form-section .input-container {
     width: 100%;
   }
   .login_container .body .banner-section .form-width,
-.login_container .body .form-section .form-width {
+  .login_container .body .form-section .form-width {
     width: 100%;
   }
   .login_container .body .banner-section .form-width form,
-.login_container .body .form-section .form-width form {
+  .login_container .body .form-section .form-width form {
     width: 100%;
   }
   .login_container .logo-section {
@@ -119,9 +116,9 @@
     margin: 30px;
   }
 }
-@media (max-width: 1123px) {
+@media (max-width: 1400px) {
   .login_container .body .form-section .form-width form .show {
-    left: 70%;
+    left: 80%;
     top: -35px;
   }
 }/*# sourceMappingURL=login.css.map */

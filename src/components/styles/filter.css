@@ -10,6 +10,7 @@
   background-color: #ffffff;
   z-index: 1;
   font-size: 14px;
+  box-sizing: border-box;
 }
 .filter-container .parameter-section {
   font-family: "Work Sans";
@@ -17,7 +18,11 @@
   color: #545F7D;
   margin: 25px 0px;
 }
-.filter-container .parameter-section input,
+.filter-container .parameter-section input {
+  width: 90%;
+  padding: 9px;
+  color: #545F7D;
+}
 .filter-container .parameter-section select {
   width: 90%;
   padding: 15px;

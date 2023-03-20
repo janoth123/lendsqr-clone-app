@@ -21,6 +21,7 @@ body {
   margin: auto;
   padding: 10px 50px;
   background-color: #ffffff;
+  box-sizing: border-box;
 }
 .navigation-body .logo-section {
   width: 20%;

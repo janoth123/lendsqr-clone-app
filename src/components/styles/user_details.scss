@@ -1,9 +1,11 @@
 @import "cards.scss";
 @import "_variables";
 .table-container{
-    overflow-x: scroll
+    overflow-x: scroll;
+    margin-left: 10px
 }
 .userdetails-container {
+    box-sizing: border-box;
     @extend .cards-container;
     width: 70%;
     top: 90px;
