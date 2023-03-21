@@ -14,6 +14,6 @@ test('user length is 100', async () => {
   await expect(UserDetails()).resolves.toBe(100);
 });
 
-test('the fetch fails with an error', async () => {
-  await expect(fetchData()).rejects.toMatch('error');
+test('the fetch fails with length <> 100', async () => {
+  await expect(UserDetails()).rejects.toMatch(100);
 });
