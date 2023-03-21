@@ -18,17 +18,19 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 10px;
+  margin: auto;
+  margin-left: 10px;
 }
 .cards-body .card {
-  width: 22%;
+  width: 19%;
   background-color: #ffffff;
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   display: flex;
   flex-direction: column;
   gap: 1px;
-  height: 130px;
+  height: 80px;
+  padding: 20px 0 40px 20px;
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 500;
@@ -55,7 +57,7 @@
     flex-direction: column;
   }
   .cards-container .cards-body .card, .userdetails-container .cards-body .card {
-    width: 100%;
+    width: 20%;
     align-items: center;
     box-sizing: border-box;
     margin-left: 0;
@@ -66,9 +68,9 @@
     padding: 0px;
   }
   .cards-body .card {
-    height: 190px;
+    height: 130px;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 15px;
   }
 }
 @media (max-width: 670px) {
@@ -78,6 +80,7 @@
   }
   .cards-body .card {
     width: 45%;
+    flex-direction: column;
   }
 }
 .table-container {
@@ -107,7 +110,7 @@
   cursor: pointer;
 }
 .userdetails-container .header-section .back-to-users .back-text {
-  color: #545F7D;
+  color: #545f7d;
   font-size: 14px;
   cursor: pointer;
   text-decoration: none;
@@ -118,7 +121,7 @@
   justify-content: space-between;
 }
 .userdetails-container .header-section .details-buttons-section .user-details-header-text {
-  color: #213F7D;
+  color: #213f7d;
 }
 .userdetails-container .header-section .details-buttons-section .buttons {
   display: flex;
@@ -127,9 +130,9 @@
 }
 .userdetails-container .header-section .details-buttons-section .buttons button:first-child {
   padding: 10px 30px;
-  color: #E4033B;
+  color: #e4033b;
   border-radius: 7px;
-  border: 1px solid #E4033B;
+  border: 1px solid #e4033b;
   background-color: #ffffff;
   font-weight: 600;
   cursor: pointer;
@@ -151,6 +154,44 @@
   font-size: 14px;
   letter-spacing: 0.1em;
 }
+.userdetails-container .loadEffect {
+  margin: 20% 50%;
+}
+.userdetails-container .lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.userdetails-container .lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.userdetails-container .lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.userdetails-container .lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.userdetails-container .lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .userdetails-container .profile-details-navigation {
   background-color: #ffffff;
 }
@@ -169,11 +210,11 @@
   height: 60px;
 }
 .userdetails-container .profile-details-navigation .profile-header .avatar-name-section .name {
-  color: #213F7D;
+  color: #213f7d;
   font-size: 22px;
 }
 .userdetails-container .profile-details-navigation .profile-header .avatar-name-section p {
-  color: #545F7D;
+  color: #545f7d;
   font-size: 12px;
   margin-top: 5px;
 }
@@ -192,7 +233,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: #545F7D;
+  color: #545f7d;
   font-size: 14px;
 }
 .userdetails-container .profile-details-navigation .profile-header .tier-section .tier-icon {
@@ -208,7 +249,7 @@
   flex-direction: column;
 }
 .userdetails-container .profile-details-navigation .profile-header .amount-section .amount {
-  color: #213F7D;
+  color: #213f7d;
   font-size: 22px;
 }
 .userdetails-container .profile-details-navigation .profile-header .amount-section .account-details {
@@ -245,7 +286,7 @@
   padding-bottom: 20px;
 }
 .userdetails-container .userdetails-body table thead {
-  color: #545F7D;
+  color: #545f7d;
   font-size: 12px;
   font-weight: 300;
   text-transform: uppercase;
@@ -257,7 +298,7 @@
   width: 24%;
 }
 .userdetails-container .userdetails-body table tbody {
-  color: #545F7D;
+  color: #545f7d;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -282,7 +323,8 @@
     flex-direction: column-reverse;
     gap: 20px;
   }
-  .userdetails-container .header-section .details-buttons-section .buttons button:first-child, .userdetails-container .header-section .details-buttons-section .buttons button:last-child {
+  .userdetails-container .header-section .details-buttons-section .buttons button:first-child,
+  .userdetails-container .header-section .details-buttons-section .buttons button:last-child {
     padding: 10px;
     font-size: 10px;
   }
@@ -303,7 +345,9 @@
     padding: 0px;
     flex-direction: column;
   }
-  .userdetails-container .profile-details-navigation .profile-header .amount-section, .userdetails-container .profile-details-navigation .profile-header .tier-section, .userdetails-container .profile-details-navigation .profile-header .avatar-name-section {
+  .userdetails-container .profile-details-navigation .profile-header .amount-section,
+  .userdetails-container .profile-details-navigation .profile-header .tier-section,
+  .userdetails-container .profile-details-navigation .profile-header .avatar-name-section {
     width: 80%;
     gap: 0;
   }

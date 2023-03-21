@@ -80,5 +80,6 @@
   }
   .cards-body .card {
     width: 45%;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=cards.css.map */
